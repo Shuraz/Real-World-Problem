@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  section {
+    background-color: gainsboro;
+  }
+  
+  section h1,
+  h5 {
+    text-align: center;
+    padding: 10px 5px 10px;
+  }
+  
+  .username {
+    position: absolute;
+    color: white;
+    width: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 5px 5px 0 0;
+    padding: 10px;
+    background-color: rgb(6, 54, 6);
+  }
+  
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .userbox {
+    background-color: whitesmoke;
+    border-radius: 5px;
+    width: 45%;
+    margin: 10px 20px;
+    padding: 50px 20px 10px;
+    position: relative;
+  }
+  
+  a {
+    display: block;
+    text-decoration: none;
+    padding: 2px;
+  }
+  
+  /* unvisited link */
+  a:link {
+    color: gray;
+  }
+  
+  a:visited {
+    color: green;
+  }
+  
+  a:hover {
+    color: hotpink;
+    text-decoration: underline;
+  }
+  
+  /* Responsive layout */
+  @media (max-width: 800px) {
+    .contact {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .userbox {
+      width: 90%;
+      margin: 10px auto;
+      padding: 50px 20px 10px;
+    }
+  }
+  
